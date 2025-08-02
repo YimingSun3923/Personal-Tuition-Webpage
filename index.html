@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yiming Sun · DBS Checked Online Tutor</title>
+  <style>
+    /* Reset & base styles */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    a { color: #006699; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Navbar */
+    #navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+      z-index: 1000;
+    }
+    #navbar a { font-weight: bold; }
+
+    /* Sections */
+    section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 4rem 1rem;
+    }
+    #welcome-section { padding-top: 6rem; text-align: center; }
+
+    /* Justify all paragraphs */
+    section p {
+      text-align: justify;
+      text-justify: inter-word;
+      margin-bottom: 1rem;
+    }
+
+    /* Image styling */
+    .profile-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 2rem 0;
+    }
+
+    /* Gallery: 3 wide grid, center 4th image */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    /* Place SMC image in middle of second row */
+    .gallery img:nth-child(4) {
+      grid-column: 2;
+    }
+
+    /* Media query */
+    @media (max-width: 600px) {
+      #navbar { flex-direction: column; align-items: center; }
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+      .gallery img:nth-child(4) {
+        grid-column: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav id="navbar">
+    <a href="#welcome-section">Home</a>
+    <a href="#qualifications">Qualifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="welcome-section">
+    <h1>Yiming Sun · Online Maths Tutor</h1>
+    <img src="R1-09851-0017.JPG" alt="Yiming Sun smiling outdoors" class="profile-image">
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <p>I am a third-year student of Mathematics at Imperial College London. I offer tuition for (international) GCSE, SQA National 5, A-level, Scottish Higher and Advanced Higher Mathematics. Upon requests, I would also consider tutoring for first year UG mathematics, the TMUA exam or provide training for maths competitions. I have worked as a part-time tutor since 2023, served as a teaching assistant at a summer camp and as a volunteer helper at the Ri Masterclass. Additionally, I held strong achievements in British Mathematics Olympiad. I have developed effective approaches to teaching complex mathematical concepts clearly and engagingly. I aim to create a supportive and adaptable tutoring environment, drawing on my recent experience of the Scottish examination system to support students in achieving their full potential.</p>
+    <p>In my spare time, I am an amateur musician. I play the guitar for my ceilidh band. I am also an organist, and I taught piano locally when I was 19 years old.</p>
+  </section>
+
+  <section id="to-the-student">
+    <h2>To the Student</h2>
+    <p>I completely understand if you're feeling unsure about tutoring. It might help to think about what you'd like to gain from our sessions—whether that's achieving a specific grade, rebuilding your confidence in mathematics, or simply discovering the enjoyment and deeper meaning behind the formulas and rules you've encountered at school.</p>
+    <p>Having recently gone through—and continuing to experience—the pressures of exams and the challenges of grasping complex topics myself, I understand how normal it is to struggle without the right support. My aim is to create a relaxed, judgment-free space where you're comfortable sharing your difficulties. Together, we'll tackle complex problems step-by-step, identifying the methods that work best for you. Remember, your educational journey is unique, and I'll be here to support and encourage you every step of the way.</p>
+  </section>
+
+  <section id="to-the-parent">
+    <h2>To the Parent</h2>
+    <p>I understand how important it is to find a supportive, effective tutor who genuinely appreciates the educational challenges students face today. Drawing directly from my recent experience with SQA, I am familiar with the frustrations and anxieties both students and parents may encounter.</p>
+    <p>My tutoring sessions focus on creating a motivating, patient, and adaptable learning environment, enabling your child to confidently tackle challenging material. I aim to provide balanced sessions, ensuring your child thoroughly understands what they've learned in school, while also stretching their mathematical ability to best prepare them for examinations.</p>
+    <p>I believe every student has the potential to excel in mathematics with the right guidance and encouragement. If you feel my approach aligns with your child's needs, please do reach out—I’d be very happy to arrange an introductory conversation at your convenience.</p>
+  </section>
+
+  <section id="qualifications">
+    <h2>Qualifications & Results</h2>
+    <div class="gallery">
+      <img src="TMUA.png" alt="TMUA Score: 90th percentile">
+      <img src="DBS.png" alt="Enhanced DBS Certificate">
+      <img src="SQA Detailed record of attainment 2023.jpg" alt="SQA Record of Attainment 2023">
+      <img src="SMC.png" alt="Senior Maths Challenge: Gold Award">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact & Rates</h2>
+    <p>Email: <a href="mailto:ariel1851@pm.me">ariel1851@pm.me</a><br>
+    Phone: <a href="tel:+447414298506">+44&nbsp;7414&nbsp;298506</a></p>
+    <h3>Online Rates</h3>
+    <ul>
+      <li>Pre-GCSE/National 5 Mathematics: £25/hour</li>
+      <li>GCSE/Higher Mathematics: £30/hour</li>
+      <li>A-level/Advanced Higher Mathematics: £35/hour</li>
+      <li>TMUA Preparation: £40/hour</li>
+      <li>Maths Competitions Preparation: £40/hour</li>
+    </ul>
+  </section>
+</body>
+</html>
